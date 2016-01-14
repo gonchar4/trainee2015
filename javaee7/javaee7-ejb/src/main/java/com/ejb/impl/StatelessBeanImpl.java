@@ -14,6 +14,10 @@ public class StatelessBeanImpl implements StatelessBean {
 	
 	@EJB(mappedName="java:global/javaee7-ear/javaee7-ejb/CounterImpl!com.ejb.interfaces.Counter")
 	private Counter counter;
+	
+	
+	@EJB(mappedName="java:global/javaee7-ear/javaee7-ejb/CounterImpl!com.ejb.interfaces.Counter")
+	private Counter counter2;
 
     /**
      * Default constructor. 
@@ -27,7 +31,7 @@ public class StatelessBeanImpl implements StatelessBean {
 		// TODO Auto-generated method stub
 		System.out.println("A=" + counter.getA());
 		counter.incrementA();
-		System.out.println("A=" + counter.getA());
+		System.out.println("A=" + counter2.getA());
 	}
 
 }

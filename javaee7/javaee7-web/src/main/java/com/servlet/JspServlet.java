@@ -25,6 +25,9 @@ public class JspServlet extends HttpServlet {
 	
 	@EJB(mappedName="java:global/javaee7-ear/javaee7-ejb/StatelessBeanImpl!com.ejb.interfaces.StatelessBean")
 	private StatelessBean statelessBean;
+	
+	@EJB(mappedName="java:global/javaee7-ear/javaee7-ejb/StatelessBean2Impl!com.ejb.interfaces.StatelessBean")
+	private StatelessBean statelessBean2;
 
        
     /**
@@ -52,6 +55,8 @@ public class JspServlet extends HttpServlet {
 		List<Integer> list = new ArrayList<Integer>();
 		
 		statelessBean.test();
+		
+		statelessBean2.test();
 		
 		list.add(param);
 		list.add(123123);

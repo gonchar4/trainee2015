@@ -7,5 +7,7 @@ import javax.ejb.Remote;
 public interface StatelessBean {
 	
 	public void test();
+	
+	
 
 }
