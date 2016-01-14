@@ -23,7 +23,7 @@ public class JspServlet extends HttpServlet {
 		
 	private static final long serialVersionUID = 1L;
 	
-	@EJB(mappedName="java:global/javaee7-ear/javaee7-ejb/StatelessBeanImp!com.ejb.interfaces.StatelessBean")
+	@EJB(mappedName="java:global/javaee7-ear/javaee7-ejb/StatelessBeanImpl!com.ejb.interfaces.StatelessBean")
 	private StatelessBean statelessBean;
 
        
